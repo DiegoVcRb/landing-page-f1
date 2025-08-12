@@ -1,0 +1,232 @@
+/* 
+  Estilos Personalizados
+
+  Aquí vamos a estilar todas las secciones, sus contenidos y el responsivo.
+*/
+
+/* Header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-normal);
+  background-color: var(--rojo-f1-color-transparent);
+  backdrop-filter: 10px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: var(--space-medium);
+}
+
+.navbar-menu a {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+}
+
+.navbar-menu a:hover {
+  color: var(--negro-f1-color);
+}
+
+.navbar-logo {
+    max-width: 10%;
+    min-width: 10%;
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  min-height: 700px;
+  background-image: url("../assets/imag/cover\ 1.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--negro-f1-color);
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-medium);
+  max-width: 80%;
+}
+.hero-actions {
+  display: flex;
+  gap: var(--space-small);
+  margin-bottom: var(--space-medium);
+}
+
+.hero-icons {
+  display: flex;
+  gap: var(--space-small);
+}
+
+/* Characters */
+.characters {
+  background-color: var(--blanco-f1-color);
+}
+
+.characters-header {
+  margin-bottom: 1rem;
+}
+.characters-content {
+  display: flex;
+}
+.characters-thumbnails {
+  width: 50%;
+}
+
+.thumbnails-item {
+  filter: brightness(0.6);
+  transition: filter 0.3s ease;
+}
+
+.thumbnails-item:hover {
+  filter: brightness(1);
+}
+
+.thumbnails-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-medium);
+}
+
+.characters-showcase {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-medium);
+}
+
+.character-info {
+  text-align: center;
+}
+
+/* Media */
+
+.media-header {
+  text-align: center;
+  margin-bottom: var(--space-medium);
+}
+
+.carucel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-medium);
+  margin-bottom: var(--space-medium);
+}
+
+.carousel-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.carousel-item:hover img {
+  filter: brightness(1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.6);
+  transition: filter 0.3s ease;
+
+}
+
+.carousel-item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--negro-f1-color);
+}
+
+.carousel-item:hover span {
+  color: var(--rojo-f1-color);
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-controls button {
+  color: var(--rojo-f1-color);
+}
+
+.carousel-controls button:hover {
+  color: var(--rojo-f1-color);
+}
+.carousel-controls span {
+  font-size: 3rem;
+}
+
+/* About */
+
+.about {
+  background:
+  /* Capas */
+  /* Layer 1 */ linear-gradient(90deg,rgba(181, 10, 19, 0.258) 0%, rgba(42, 33, 35, 0.11) 100%), 
+     /* Layer 2 */ url(../assets/imag/F1.svg) center content no-repear;
+  background-size: cover;
+}
+
+.about > div {
+  display: flex;
+  padding: var(--space-large);
+}
+
+.about-image,
+.about-content {
+  width: 50%;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 240px;
+  min-width: 200px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h2
+.about-content p {
+  color: var(--blanco-f1-color);
+   }
